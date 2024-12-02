@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us</title>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <!-- Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body style="background-image: url(./Assets/images/contact_us.jpg); background-size: cover;
+object-fit: cover;
+height: 100vh;
+margin: 0;
+" >
+
+  <div class="container" style="background-color: rgba(255, 255, 255, 0.393);  box-shadow: 15px 10px 15px 5px rgba(0, 0, 0, 0.3);">
+    <div class="row">
+      <div class="col-md-6 offset-md-3">
+        <h1 class="text-center my-5">Contact Us</h1>
+        <form action="#" method="post">
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" class="form-control" id="name" placeholder="Enter your name" required>
+          </div>
+          <div class="form-group">
+            <label for="email">Email address</label>
+            <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea class="form-control" id="message" rows="4" placeholder="Enter your message" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-block" id="btn">Submit</button>
+        </form>
+
+        <div class="contact-details mt-5 text-center m-2">
+          <h4>Or Reach Me On</h4>
+          <div class="social-icons">
+            <a href="tel:+91-9178138615" class="btn btn-outline-primary mr-3">
+              <i class="fas fa-phone-alt"></i> +91-9178138615
+            </a>
+            <a href="mailto:sahoswapnajit@gmail.com.com" class="btn btn-outline-info mr-3 mt-2">
+              <i class="fas fa-envelope"></i> sahoswapnajit@gmail.com
+            </a>
+            <a href="https://www.linkedin.com/in/yourprofile" class="btn btn-outline-primary mr-3 mt-2" >
+              <i class="fab fa-linkedin"></i> LinkedIn
+            </a>
+            <a href="https://www.instagram.com/yourprofile" class="btn btn-outline-danger" >
+              <i class="fab fa-instagram"></i> Instagram
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="/Assets/Javascripts/contact.js"></script>
+</body>
+</html>

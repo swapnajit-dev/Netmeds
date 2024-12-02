@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Overweight and Obesity Information</title>
+    <link rel="stylesheet" href="./Assets/Stylesheets/consulatancy.css"> <!-- Link to your CSS -->
+</head>
+<body style="background-image: url(./Assets/images/overWeight.jpg); background-size: cover;
+object-fit: cover;
+height: 100vh;
+margin: 0;
+" >
+    <header style="background-color: rgba(248, 170, 54, 0.736);">
+        <h1>Overweight and Obesity Information</h1>
+        <nav>
+            <ul>
+                <li><a href="#articles">Articles</a></li>
+                <li><a href="#contact">Contact a Consultant</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="articles">
+        <h2>Articles About Overweight and Obesity</h2>
+        <article>
+            <h3>Understanding Overweight and Obesity</h3>
+            <p>Overweight and obesity are serious health conditions that increase the risk of various diseases. Learn about their causes...</p>
+            <a href="https://www.who.int/news-room/fact-sheets/detail/obesity-and-overweight">Read more</a>
+        </article>
+        <article>
+            <h3>Health Risks of Being Overweight</h3>
+            <p>Being overweight can lead to serious health problems like heart disease, diabetes, and more. Discover the risks...</p>
+            <a href="https://www.who.int/news-room/fact-sheets/detail/obesity-and-overweight">Read more</a>
+        </article>
+        <article>
+            <h3>Effective Weight Loss Strategies</h3>
+            <p>Losing weight requires a combination of healthy eating and exercise. This article discusses proven weight loss strategies...</p>
+            <a href="https://www.who.int/news-room/fact-sheets/detail/obesity-and-overweight">Read more</a>
+        </article>
+        <article>
+            <h3>Nutrition Tips for Managing Weight</h3>
+            <p>Eating the right foods is crucial when managing weight. Learn about the best diet practices for controlling your weight...</p>
+            <a href="https://www.who.int/news-room/fact-sheets/detail/obesity-and-overweight">Read more</a>
+        </article>
+        <article>
+            <h3>Exercise for Weight Loss</h3>
+            <p>Exercise is an essential component of any weight loss plan. Find out which exercises are most effective for burning fat...</p>
+            <a href="https://www.who.int/news-room/fact-sheets/detail/obesity-and-overweight">Read more</a>
+        </article>
+        <!-- Add more articles as needed -->
+    </section>
+
+    <section id="contact" style="background-color: rgba(255, 255, 255, 0.653);">
+        <h2>Contact a Weight Loss Consultant</h2>
+        <form action="submit_form.php" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+
+            <button type="submit" id="btn">Submit</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Overweight and Obesity Information</p>
+    </footer>
+</body>
+<script src="./Assets/Javascripts/consultancy.js"></script>
+
+</html>

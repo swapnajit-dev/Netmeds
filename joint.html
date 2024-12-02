@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joint Pain Information</title>
+    <link rel="stylesheet" href="./Assets/Stylesheets/consulatancy.css"> <!-- Link to your CSS -->
+</head>
+<body style="background-image: url(./Assets/images/pain-relief.jpg); background-size: cover;
+object-fit: cover;
+height: 100vh;
+margin: 0;
+" >
+    <header>
+        <h1>Joint Pain Information</h1>
+        <nav>
+            <ul>
+                <li><a href="#articles">Articles</a></li>
+                <li><a href="#contact">Contact a Consultant</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="articles" style="background-color: rgba(255, 255, 255, 0.519);">
+        <h2>Articles About Joint Pain</h2>
+        <article>
+            <h3>Causes of Joint Pain</h3>
+            <p>Joint pain can be caused by various factors, including arthritis, injury, or overuse. Learn more about the common causes...</p>
+            <a href="https://www.medicalnewstoday.com/articles/joint-pain">Read more</a>
+        </article>
+        <article>
+            <h3>Managing Arthritis Symptoms</h3>
+            <p>Arthritis is a major cause of joint pain. This article explains effective ways to manage arthritis symptoms...</p>
+            <a href="https://www.medicalnewstoday.com/articles/joint-pain">Read more</a>
+        </article>
+        <article>
+            <h3>Exercises to Reduce Joint Pain</h3>
+            <p>Staying active is important for joint health. Discover the best exercises to keep your joints flexible and reduce pain...</p>
+            <a href="https://www.medicalnewstoday.com/articles/joint-pain">Read more</a>
+        </article>
+        <article>
+            <h3>When to See a Doctor</h3>
+            <p>It's important to know when joint pain requires professional attention. Learn about the warning signs...</p>
+            <a href="https://www.medicalnewstoday.com/articles/joint-pain">Read more</a>
+        </article>
+        <!-- Add more articles as needed -->
+    </section>
+
+    <section id="contact" style="background-color: grey">
+        <h2>Contact a Joint Pain Consultant</h2>
+        <form action="submit_form.php" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+
+            <button type="submit" id="btn">Submit</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Joint Pain Information</p>
+    </footer>
+</body>
+<script src="./Assets/Javascripts/consultancy.js"></script>
+</html>

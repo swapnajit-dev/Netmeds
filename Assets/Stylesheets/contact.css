@@ -1,0 +1,58 @@
+body {
+    background-color: #f4f7fa;
+  }
+  
+  .container {
+    margin-top: 50px;
+  }
+  
+  h1 {
+    color: #333;
+  }
+  
+  .form-control {
+    border-radius: 0.25rem;
+  }
+  
+  .btn {
+    border-radius: 0.25rem;
+    padding: 10px;
+  }
+  
+  .contact-details {
+    margin-top: 40px;
+  }
+  
+  .social-icons .btn {
+    font-size: 16px;
+    padding: 12px 20px;
+    margin-top: 10px;
+    transition: all 0.3s ease; /* Smooth transition */
+  }
+  
+  .social-icons i {
+    margin-right: 10px;
+  }
+  
+  
+  .social-icons .btn:hover {
+    transform: translateY(-5px); /* Moves the button up */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adds shadow */
+  }
+  
+  
+  .social-icons .btn-outline-primary:hover {
+    background-color: #007bff;
+    color: white;
+  }
+  
+  .social-icons .btn-outline-info:hover {
+    background-color: #17a2b8;
+    color: white;
+  }
+  
+  .social-icons .btn-outline-danger:hover {
+    background-color: #dc3545;
+    color: white;
+  }
+  

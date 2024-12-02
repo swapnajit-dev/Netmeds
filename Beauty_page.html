@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beauty Products Showcase</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body style="background-image: url(./Assets/images/beauty-cosmetics-products-roses-with-copy-space.jpg); background-size: cover; object-fit: cover; height: 100vh; margin: 0;">
+    <nav class="navbar navbar-expand-lg navbar-custom">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="https://www.netmeds.com/images/cms/aw_rbslider/slides/1704908302_1704906198_1673595841_1663609483_netmeds-new-logo.svg" alt="Logo">
+            </a>
+            <div class="mb-3 mx-5 mt-3 position-fixed d-flex"></div>
+            <div class="collapse navbar-collapse" id="navbarNav" style="font-size: large; font-weight: 800; position: fixed; z-index: 10; background-color: yellowgreen;">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="./about.html">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <button class="nav-link" id="cart-button">Cart <span class="badge bg-danger" id="cart">0</span></button>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./contact.html">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="cart-items"></div>
+
+    <div class="container my-5">
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+            <!-- Updated Product Cards -->
+            <div class="col">
+                <div class="card" style="border: 1px solid #ddd; box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); background-color: rgba(255, 255, 255, 0.634);">
+                    <div class="position-relative">
+                        <img src="./Assets/Javascripts/product images/Beauty/Beauty (1).jpg" id="card-image" class="card-img-top" alt="Product Image" style="object-fit: contain; height: 200px;">
+                        <span class="badge bg-primary position-absolute top-0 start-0 m-2 border">⭐ 4.9</span>
+                        <button class="btn btn-outline-secondary rounded-circle position-absolute top-0 end-0 m-2" style="border-radius: 50%;">
+                          <i class="fa-regular fa-heart" id="icon"></i>
+                        </button>
+                    </div>
+                    <div class="card-body">
+                        <h6 class="card-title" id="card-title">GlowSkin Radiant Moisturizer 200ml</h6>
+                        <p class="mb-1">
+                            <span class="fw-bold" id="card-price">₹ 499.00</span>
+                            <span class="text-muted text-decoration-line-through">₹ 650.00</span>
+                        </p>
+                        <p class="text-success mb-3">GET 23% off</p>
+                        <button class="btn btn-teal w-100 bg-primary text-white" id="addCart">ADD TO CART</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card" style="border: 1px solid #ddd; box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); background-color: rgba(255, 255, 255, 0.634);">
+                    <div class="position-relative">
+                        <img src="./Assets/Javascripts/product images/Beauty/Beauty (2).jpg" id="card-image" class="card-img-top" alt="Product Image" style="object-fit: contain; height: 200px;">
+                        <span class="badge bg-primary position-absolute top-0 start-0 m-2 border">⭐ 4.8</span>
+                        <button class="btn btn-outline-secondary rounded-circle position-absolute top-0 end-0 m-2" style="border-radius: 50%;">
+                          <i class="fa-regular fa-heart" id="icon"></i>
+                        </button>
+                    </div>
+                    <div class="card-body">
+                        <h6 class="card-title" id="card-title">HerbalCare Face Wash 150ml</h6>
+                        <p class="mb-1">
+                            <span class="fw-bold" id="card-price">₹ 349.00</span>
+                            <span class="text-muted text-decoration-line-through">₹ 450.00</span>
+                        </p>
+                        <p class="text-success mb-3">GET 22% off</p>
+                        <button class="btn btn-teal w-100 bg-primary text-white" id="addCart">ADD TO CART</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card" style="border: 1px solid #ddd; box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); background-color: rgba(255, 255, 255, 0.634);">
+                    <div class="position-relative">
+                        <img src="./Assets/Javascripts/product images/Beauty/Beauty (3).jpg" id="card-image" class="card-img-top" alt="Product Image" style="object-fit: contain; height: 200px;">
+                        <span class="badge bg-primary position-absolute top-0 start-0 m-2 border">⭐ 4.7</span>
+                        <button class="btn btn-outline-secondary rounded-circle position-absolute top-0 end-0 m-2" style="border-radius: 50%;">
+                          <i class="fa-regular fa-heart" id="icon"></i>
+                        </button>
+                    </div>
+                    <div class="card-body">
+                        <h6 class="card-title" id="card-title">PureEssence Hydrating Serum 50ml</h6>
+                        <p class="mb-1">
+                            <span class="fw-bold" id="card-price">₹ 799.00</span>
+                            <span class="text-muted text-decoration-line-through">₹ 1,050.00</span>
+                        </p>
+                        <p class="text-success mb-3">GET 24% off</p>
+                        <button class="btn btn-teal w-100 bg-primary text-white" id="addCart">ADD TO CART</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card" style="border: 1px solid #ddd; box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); background-color: rgba(255, 255, 255, 0.634);">
+                    <div class="position-relative">
+                        <img src="./Assets/Javascripts/product images/Beauty/Beauty (4).jpg" id="card-image" class="card-img-top" alt="Product Image" style="object-fit: contain; height: 200px;">
+                        <span class="badge bg-primary position-absolute top-0 start-0 m-2 border">⭐ 4.7</span>
+                        <button class="btn btn-outline-secondary rounded-circle position-absolute top-0 end-0 m-2" style="border-radius: 50%;">
+                          <i class="fa-regular fa-heart" id="icon"></i>
+                        </button>
+                    </div>
+                    <div class="card-body">
+                        <h6 class="card-title" id="card-title">PureEssence Hydrating Serum 50ml</h6>
+                        <p class="mb-1">
+                            <span class="fw-bold" id="card-price">₹ 799.00</span>
+                            <span class="text-muted text-decoration-line-through">₹ 1,050.00</span>
+                        </p>
+                        <p class="text-success mb-3">GET 24% off</p>
+                        <button class="btn btn-teal w-100 bg-primary text-white" id="addCart">ADD TO CART</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card" style="border: 1px solid #ddd; box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); background-color: rgba(255, 255, 255, 0.634);">
+                    <div class="position-relative">
+                        <img src="./Assets/Javascripts/product images/Beauty/Beauty (5).jpg" id="card-image" class="card-img-top" alt="Product Image" style="object-fit: contain; height: 200px;">
+                        <span class="badge bg-primary position-absolute top-0 start-0 m-2 border">⭐ 4.7</span>
+                        <button class="btn btn-outline-secondary rounded-circle position-absolute top-0 end-0 m-2" style="border-radius: 50%;">
+                          <i class="fa-regular fa-heart" id="icon"></i>
+                        </button>
+                    </div>
+                    <div class="card-body">
+                        <h6 class="card-title" id="card-title">PureEssence Hydrating Serum 50ml</h6>
+                        <p class="mb-1">
+                            <span class="fw-bold" id="card-price">₹ 799.00</span>
+                            <span class="text-muted text-decoration-line-through">₹ 1,050.00</span>
+                        </p>
+                        <p class="text-success mb-3">GET 24% off</p>
+                        <button class="btn btn-teal w-100 bg-primary text-white" id="addCart">ADD TO CART</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card" style="border: 1px solid #ddd; box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); background-color: rgba(255, 255, 255, 0.634);">
+                    <div class="position-relative">
+                        <img src="./Assets/Javascripts/product images/Beauty/Beauty (6).jpg" id="card-image" class="card-img-top" alt="Product Image" style="object-fit: contain; height: 200px;">
+                        <span class="badge bg-primary position-absolute top-0 start-0 m-2 border">⭐ 4.7</span>
+                        <button class="btn btn-outline-secondary rounded-circle position-absolute top-0 end-0 m-2" style="border-radius: 50%;">
+                          <i class="fa-regular fa-heart" id="icon"></i>
+                        </button>
+                    </div>
+                    <div class="card-body">
+                        <h6 class="card-title" id="card-title">PureEssence Hydrating Serum 50ml</h6>
+                        <p class="mb-1">
+                            <span class="fw-bold" id="card-price">₹ 799.00</span>
+                            <span class="text-muted text-decoration-line-through">₹ 1,050.00</span>
+                        </p>
+                        <p class="text-success mb-3">GET 24% off</p>
+                        <button class="btn btn-teal w-100 bg-primary text-white" id="addCart">ADD TO CART</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card" style="border: 1px solid #ddd; box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); background-color: rgba(255, 255, 255, 0.634);">
+                    <div class="position-relative">
+                        <img src="./Assets/Javascripts/product images/Beauty/Beauty (7).jpg" id="card-image" class="card-img-top" alt="Product Image" style="object-fit: contain; height: 200px;">
+                        <span class="badge bg-primary position-absolute top-0 start-0 m-2 border">⭐ 4.7</span>
+                        <button class="btn btn-outline-secondary rounded-circle position-absolute top-0 end-0 m-2" style="border-radius: 50%;">
+                          <i class="fa-regular fa-heart" id="icon"></i>
+                        </button>
+                    </div>
+                    <div class="card-body">
+                        <h6 class="card-title" id="card-title">PureEssence Hydrating Serum 50ml</h6>
+                        <p class="mb-1">
+                            <span class="fw-bold" id="card-price">₹ 799.00</span>
+                            <span class="text-muted text-decoration-line-through">₹ 1,050.00</span>
+                        </p>
+                        <p class="text-success mb-3">GET 24% off</p>
+                        <button class="btn btn-teal w-100 bg-primary text-white" id="addCart">ADD TO CART</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card" style="border: 1px solid #ddd; box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); background-color: rgba(255, 255, 255, 0.634);">
+                    <div class="position-relative">
+                        <img src="./Assets/Javascripts/product images/Beauty/Beauty (8).jpg" id="card-image" class="card-img-top" alt="Product Image" style="object-fit: contain; height: 200px;">
+                        <span class="badge bg-primary position-absolute top-0 start-0 m-2 border">⭐ 4.7</span>
+                        <button class="btn btn-outline-secondary rounded-circle position-absolute top-0 end-0 m-2" style="border-radius: 50%;">
+                          <i class="fa-regular fa-heart" id="icon"></i>
+                        </button>
+                    </div>
+                    <div class="card-body">
+                        <h6 class="card-title" id="card-title">PureEssence Hydrating Serum 50ml</h6>
+                        <p class="mb-1">
+                            <span class="fw-bold" id="card-price">₹ 799.00</span>
+                            <span class="text-muted text-decoration-line-through">₹ 1,050.00</span>
+                        </p>
+                        <p class="text-success mb-3">GET 24% off</p>
+                        <button class="btn btn-teal w-100 bg-primary text-white" id="addCart">ADD TO CART</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card" style="border: 1px solid #ddd; box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); background-color: rgba(255, 255, 255, 0.634);">
+                    <div class="position-relative">
+                        <img src="./Assets/Javascripts/product images/Beauty/Beauty (9).jpg" id="card-image" class="card-img-top" alt="Product Image" style="object-fit: contain; height: 200px;">
+                        <span class="badge bg-primary position-absolute top-0 start-0 m-2 border">⭐ 4.7</span>
+                        <button class="btn btn-outline-secondary rounded-circle position-absolute top-0 end-0 m-2" style="border-radius: 50%;">
+                          <i class="fa-regular fa-heart" id="icon"></i>
+                        </button>
+                    </div>
+                    <div class="card-body">
+                        <h6 class="card-title" id="card-title">PureEssence Hydrating Serum 50ml</h6>
+                        <p class="mb-1">
+                            <span class="fw-bold" id="card-price">₹ 799.00</span>
+                            <span class="text-muted text-decoration-line-through">₹ 1,050.00</span>
+                        </p>
+                        <p class="text-success mb-3">GET 24% off</p>
+                        <button class="btn btn-teal w-100 bg-primary text-white" id="addCart">ADD TO CART</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card" style="border: 1px solid #ddd; box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); background-color: rgba(255, 255, 255, 0.634);">
+                    <div class="position-relative">
+                        <img src="./Assets/Javascripts/product images/Beauty/Beauty (10).jpg" id="card-image" class="card-img-top" alt="Product Image" style="object-fit: contain; height: 200px;">
+                        <span class="badge bg-primary position-absolute top-0 start-0 m-2 border">⭐ 4.7</span>
+                        <button class="btn btn-outline-secondary rounded-circle position-absolute top-0 end-0 m-2" style="border-radius: 50%;">
+                          <i class="fa-regular fa-heart" id="icon"></i>
+                        </button>
+                    </div>
+                    <div class="card-body">
+                        <h6 class="card-title" id="card-title">PureEssence Hydrating Serum 50ml</h6>
+                        <p class="mb-1">
+                            <span class="fw-bold" id="card-price">₹ 799.00</span>
+                            <span class="text-muted text-decoration-line-through">₹ 1,050.00</span>
+                        </p>
+                        <p class="text-success mb-3">GET 24% off</p>
+                        <button class="btn btn-teal w-100 bg-primary text-white" id="addCart">ADD TO CART</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card" style="border: 1px solid #ddd; box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); background-color: rgba(255, 255, 255, 0.634);">
+                    <div class="position-relative">
+                        <img src="./Assets/Javascripts/product images/Beauty/Beauty (11).jpg" id="card-image" class="card-img-top" alt="Product Image" style="object-fit: contain; height: 200px;">
+                        <span class="badge bg-primary position-absolute top-0 start-0 m-2 border">⭐ 4.7</span>
+                        <button class="btn btn-outline-secondary rounded-circle position-absolute top-0 end-0 m-2" style="border-radius: 50%;">
+                          <i class="fa-regular fa-heart" id="icon"></i>
+                        </button>
+                    </div>
+                    <div class="card-body">
+                        <h6 class="card-title" id="card-title">PureEssence Hydrating Serum 50ml</h6>
+                        <p class="mb-1">
+                            <span class="fw-bold" id="card-price">₹ 799.00</span>
+                            <span class="text-muted text-decoration-line-through">₹ 1,050.00</span>
+                        </p>
+                        <p class="text-success mb-3">GET 24% off</p>
+                        <button class="btn btn-teal w-100 bg-primary text-white" id="addCart">ADD TO CART</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card" style="border: 1px solid #ddd; box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); background-color: rgba(255, 255, 255, 0.634);">
+                    <div class="position-relative">
+                        <img src="./Assets/Javascripts/product images/Beauty/Beauty (12).jpg" id="card-image" class="card-img-top" alt="Product Image" style="object-fit: contain; height: 200px;">
+                        <span class="badge bg-primary position-absolute top-0 start-0 m-2 border">⭐ 4.7</span>
+                        <button class="btn btn-outline-secondary rounded-circle position-absolute top-0 end-0 m-2" style="border-radius: 50%;">
+                          <i class="fa-regular fa-heart" id="icon"></i>
+                        </button>
+                    </div>
+                    <div class="card-body">
+                        <h6 class="card-title" id="card-title">PureEssence Hydrating Serum 50ml</h6>
+                        <p class="mb-1">
+                            <span class="fw-bold" id="card-price">₹ 799.00</span>
+                            <span class="text-muted text-decoration-line-through">₹ 1,050.00</span>
+                        </p>
+                        <p class="text-success mb-3">GET 24% off</p>
+                        <button class="btn btn-teal w-100 bg-primary text-white" id="addCart">ADD TO CART</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Add more cards as needed -->
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wellcare Health Information</title>
+    <link rel="stylesheet" href="./Assets/Stylesheets/consulatancy.css"> <!-- Link to your CSS -->
+</head>
+<body>
+    <header>
+        <h1>Wellcare Health Information</h1>
+        <nav>
+            <ul>
+                <li><a href="#articles">Articles</a></li>
+                <li><a href="#contact">Contact a Health Consultant</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="articles">
+        <h2>Articles About Health Care</h2>
+        <article>
+            <h3>Understanding Healthy Skin Care</h3>
+            <p>Healthy skin is essential for overall well-being. Learn about tips and routines...</p>
+            <a href="https://www.sciencedirect.com/topics/medicine-and-dentistry/health-care">Read more</a>
+        </article>
+        <article>
+            <h3>The Importance of Hydration</h3>
+            <p>Proper hydration plays a key role in maintaining good health. Discover why...</p>
+            <a href="https://www.sciencedirect.com/topics/medicine-and-dentistry/health-care">Read more</a>
+        </article>
+        <article>
+            <h3>Benefits of Regular Exercise</h3>
+            <p>Exercise has numerous health benefits, including improving heart health...</p>
+            <a href="https://www.sciencedirect.com/topics/medicine-and-dentistry/health-care">Read more</a>
+        </article>
+        <!-- Add more articles as needed -->
+    </section>
+
+    <section id="contact">
+        <h2>Contact a Health Consultant</h2>
+        <form action="submit_form.php" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+
+            <button type="submit" id="btn">Submit</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Wellcare Health Information</p>
+    </footer>
+</body>
+<script>
+let button = document.querySelector('#btn');
+button.addEventListener('click',(event) => {
+    event.preventDefault();
+    window.location.href = 'cong.html';
+});
+</script>
+</html>

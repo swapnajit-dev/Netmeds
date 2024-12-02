@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./Assets/Stylesheets/signup.css">
+</head>
+<body style="background-image: url(./Assets/images/sign_up.jpg); background-size: cover;
+object-fit: cover;
+height: 100vh;
+margin: 0;
+" >
+    <div class="login-container" style="background-color: rgba(128, 128, 128, 0.655);  box-shadow: 15px 10px 15px 5px rgba(0, 0, 0, 0.3);">
+        <h2 class="text-center mb-4">Sign up</h2>
+        <form id="loginForm" onsubmit="return false;">
+            <div class="form-group">
+                <label for="email">Email address</label>
+                <input type="email" class="form-control" id="email" placeholder="Enter your email" required style="text-align: center;">
+            </div>
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" class="form-control" id="password" placeholder="Enter your password" required style="text-align: center;">
+            </div>
+            <button type="button" class="btn btn-primary btn-block login-btn" id="loginBtn">
+                sign up
+            </button>
+        </form>
+    </div>
+
+    <script src="./Assets/Javascripts/signup.js">
+       
+    </script>
+</body>
+</html>

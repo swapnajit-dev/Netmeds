@@ -1,0 +1,16 @@
+.login-btn {
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+}
+.login-btn:hover {
+    background-color: #0056b3;
+}
+.login-container {
+    margin: 50px auto;
+    max-width: 400px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    background: #f8f9fa;
+}

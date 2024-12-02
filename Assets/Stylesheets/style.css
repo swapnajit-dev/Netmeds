@@ -1,0 +1,145 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body, html {
+  height: 100%;
+  width: 100%;
+  overflow-x: hidden;
+}
+i{
+  cursor:pointer;
+}
+body.darkMode {
+  background-color: #121212;
+  color: #ffffff;
+}
+.navbar-custom {
+  background-color: #30bab0; /* Custom color */
+}
+.navbar-nav .nav-link {
+  color: #fff;
+}
+.navbar-brand img {
+  height: 40px; /* Adjust logo size */
+}
+
+.icon-text {
+  display: flex;
+  align-items: center;
+  color: #fff;
+}
+.icon-text img {
+  height: 30px;
+  margin-right: 8px;
+}
+.bod:hover {
+  border: 1.5px solid black;
+  cursor: pointer;
+}
+.payment {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  margin-top: 20px;
+  padding: 20px;
+}
+.totalPayment {
+  display: flex;
+  gap: 30px;
+}
+.member {
+  /* display: flex; */
+  flex-direction: row;  
+  gap: 60px;
+}
+.price {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.slider-container {
+  width: 100%;
+  overflow: hidden;
+}
+.slider {
+  display: flex;
+  flex: 0 0 auto;
+  animation: slide 12s infinite;
+}
+.mycard {
+  margin-right: 10px; /* Reduced margin to avoid overlap */
+}
+.mycard img {
+  width: 400px;
+  height: 270px;
+}
+@keyframes slide {
+  0% { transform: translateX(0); }
+  25% { transform: translateX(-310px); }
+  50% { transform: translateX(-520px); }
+  75% { transform: translateX(-730px); }
+  85% { transform: translateX(-920px); }
+  100% { transform: translateX(0); }
+}
+.productCard {
+  width: 300px;
+  height: 300px;
+  border: 1px solid #ddd;
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  cursor: pointer;
+}
+.allcards {
+  display: flex;
+  justify-content: space-around;
+}
+#special > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+#special:hover {
+  cursor: pointer;
+}
+#catagory > img:hover {
+  cursor: pointer;
+}
+
+/* Added CSS */
+.container-fluid {
+  margin-bottom: 20px; /* Ensure spacing between sections */
+}
+.d-flex {
+  gap: 20px; /* Maintain enough space between flex items */
+}
+.bod {
+  margin-bottom: 15px; /* Prevent overlap with the next section */
+}
+.removingUnderlines a{
+  text-decoration: none;
+  color: black;
+}
+.navbar-custom {
+  background-color: #30bab0; /* Custom color */
+}
+.navbar-nav .nav-link {
+  color: #fff;
+}
+.navbar-brand img {
+  height: 60px; /* Adjust logo size */
+}
+.icon-text {
+  display: flex;
+  align-items: center;
+  color: #fff;
+}
+.icon-text img {
+  height: 30px;
+  margin-right: 8px;
+}

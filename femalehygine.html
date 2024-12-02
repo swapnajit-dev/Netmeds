@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feminine Hygiene Information</title>
+    <link rel="stylesheet" href="/Assets/Stylesheets/consulatancy.css"> <!-- Link to your CSS -->
+</head>
+<body style="background-image: url(./Assets/images/femine.jpg); background-size: cover;
+object-fit: cover;
+height: 100vh;
+margin: 0;
+" >
+    <header style="background: rgba(4, 137, 147, 0.771);">
+        <h1>Feminine Hygiene Information</h1>
+        <nav>
+            <ul>
+                <li><a href="#articles">Articles</a></li>
+                <li><a href="#contact">Contact a Consultant</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="articles">
+        <h2>Articles About Feminine Hygiene</h2>
+        <article>
+            <h3>Understanding Menstrual Health</h3>
+            <p>Menstrual health is an important aspect of overall feminine hygiene. Learn about how to manage your cycle...</p>
+            <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC7789027/#:~:text=Women%20of%20all%20ages%20require,keep%20their%20genital%20area%20clean.&text=The%20vulva%20is%20susceptible%20to,to%20avoid%20contact%20with%20irritants.&text=Use%20a%20hypoallergenic%20liquid%20wash,and%20pH%204.2%20to%205.6.">Read more</a>
+        </article>
+        <article>
+            <h3>The Importance of Intimate Care</h3>
+            <p>Intimate care is essential to maintaining good feminine hygiene and preventing infections. Find out how...</p>
+            <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC7789027/#:~:text=Women%20of%20all%20ages%20require,keep%20their%20genital%20area%20clean.&text=The%20vulva%20is%20susceptible%20to,to%20avoid%20contact%20with%20irritants.&text=Use%20a%20hypoallergenic%20liquid%20wash,and%20pH%204.2%20to%205.6.">Read more</a>
+        </article>
+        <article>
+            <h3>Choosing the Right Feminine Products</h3>
+            <p>There are a variety of products available for feminine hygiene. This article helps you choose the right one...</p>
+            <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC7789027/#:~:text=Women%20of%20all%20ages%20require,keep%20their%20genital%20area%20clean.&text=The%20vulva%20is%20susceptible%20to,to%20avoid%20contact%20with%20irritants.&text=Use%20a%20hypoallergenic%20liquid%20wash,and%20pH%204.2%20to%205.6.">Read more</a>
+        </article>
+        <article>
+            <h3>Best Practices for Vaginal Health</h3>
+            <p>Maintaining vaginal health is crucial for overall well-being. Explore the best practices for feminine hygiene...</p>
+            <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC7789027/#:~:text=Women%20of%20all%20ages%20require,keep%20their%20genital%20area%20clean.&text=The%20vulva%20is%20susceptible%20to,to%20avoid%20contact%20with%20irritants.&text=Use%20a%20hypoallergenic%20liquid%20wash,and%20pH%204.2%20to%205.6.">Read more</a>
+        </article>
+        <!-- Add more articles as needed -->
+    </section>
+
+    <section id="contact" style="background-color:  rgba(4, 137, 147, 0.771);">
+        <h2>Contact a Feminine Hygiene Consultant</h2>
+        <form action="submit_form.php" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+
+            <button type="submit" id="btn">Submit</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Feminine Hygiene Information</p>
+    </footer>
+</body>
+<script src="./Assets/Javascripts/consultancy.js"></script>
+
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lung Disease Information</title>
+    <link rel="stylesheet" href="./Assets/Stylesheets/consulatancy.css"> <!-- Link to your CSS -->
+</head>
+<body style="background-image: url(./Assets/images/lung.jpg); background-size: cover;
+object-fit: cover;
+height: 100vh;
+margin: 0;
+" >
+    <header style="background-color: rgba(0, 94, 255, 0.716);">
+        <h1>Lung Disease Information</h1>
+        <nav>
+            <ul>
+                <li><a href="#articles">Articles</a></li>
+                <li><a href="#contact">Contact a Consultant</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="articles">
+        <h2>Articles About Lung Diseases</h2>
+        <article>
+            <h3>Understanding Asthma</h3>
+            <p>Asthma is a chronic condition that affects the airways...</p>
+            <a href="https://respiratory-research.biomedcentral.com/articles/10.1186/s12931-022-02297-y">Read more</a>
+        </article>
+        <article>
+            <h3>Causes and Prevention of Lung Cancer</h3>
+            <p>Lung cancer is one of the most common types of cancer...</p>
+            <a href="https://respiratory-research.biomedcentral.com/articles/10.1186/s12931-022-02297-y">Read more</a>
+        </article>
+        <!-- Add more articles as needed -->
+    </section>
+
+    <section id="contact" style="background-color: rgba(255, 255, 255, 0.514);">
+        <h2>Contact a Health Consultant</h2>
+        <form action="submit_form.php" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+
+            <button type="submit" id="btn">Submit</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Medicine Store Project</p>
+    </footer>
+</body>
+<script src="./Assets/Javascripts/consultancy.js"></script>
+</html>
